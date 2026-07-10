@@ -1,0 +1,103 @@
+/* ============================================================
+   ESTILO.CSS — Sistema de Biblioteca
+   Paleta: azul oscuro + cian, alto contraste, estilo tech
+   ============================================================ */
+
+body {
+    background-image: url('../fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.overlay {
+    background-color: rgba(3, 7, 18, 0.65);
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.titulo-principal {
+    color: #22d3ee;
+    text-shadow: 2px 2px 12px rgba(34, 211, 238, 0.6);
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.card-biblioteca {
+    background-color: rgba(15, 23, 42, 0.92);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(34, 211, 238, 0.25);
+    color: #e2e8f0;
+}
+
+.card-header-biblioteca {
+    background: linear-gradient(135deg, #0f172a, #0891b2);
+    color: #ffffff;
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #22d3ee;
+}
+
+.card-biblioteca .form-label,
+.card-biblioteca p {
+    color: #e2e8f0;
+}
+
+.card-biblioteca .form-control,
+.card-biblioteca .form-select {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+}
+.card-biblioteca .form-control:focus,
+.card-biblioteca .form-select:focus {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 0.25rem rgba(34, 211, 238, 0.25);
+}
+
+.btn-biblioteca {
+    background-color: #22d3ee;
+    border: none;
+    color: #0f172a;
+    font-weight: 700;
+}
+.btn-biblioteca:hover {
+    background-color: #67e8f9;
+    color: #0f172a;
+}
+
+/* --------------------------------------------------------
+   TABLA — usa las variables internas de Bootstrap en vez de
+   pelear con selectores td/th sueltos (esto es lo que faltaba)
+   -------------------------------------------------------- */
+.tabla-biblioteca {
+    --bs-table-color: #e2e8f0;
+    --bs-table-bg: transparent;
+    --bs-table-striped-color: #e2e8f0;
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.05);
+    --bs-table-hover-color: #ffffff;
+    --bs-table-hover-bg: rgba(34, 211, 238, 0.15);
+    --bs-table-border-color: rgba(255, 255, 255, 0.15);
+    font-size: 0.9rem;
+}
+.tabla-biblioteca thead {
+    background-color: #0891b2;
+    color: white;
+}
+
+.badge-disponible { background-color: #16a34a; }
+.badge-prestado    { background-color: #22d3ee; color: #0f172a; }
+.badge-inactivo    { background-color: #64748b; }
+
+.card-biblioteca .form-control::placeholder {
+    color: #e2e8f0;
+    opacity: 1;
+}
